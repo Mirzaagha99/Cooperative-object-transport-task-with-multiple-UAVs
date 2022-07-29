@@ -7,7 +7,9 @@ Trajectory_Mirzaagha_Trinchese.m: This file contains the code for generating a r
  PATH_TL, PATH_TL2, TOTAL_COORD_PATH, TOTAL_COORD_PATH2, TOTAL_COORD_PATHenu, TOTAL_COORD_PATH2enu.
 
 Final_Project_Mirzaagha_Trinchese.slx: In this file there is the simulink schema for the simulation but it is necessary to underline two things:
+
 -the 3D visualization of the uavs does not happen in this file: The simulation is already heavy on its own and if you add the 3D visualization too the situation gets worse. For this reason, the data that would normally be sent to the UAV blocks are instead sent to a "To workspace" to be used in the other simulink file. If you want to see the 3D animation in this file, just uncomment the UAV toolbox blocks in this file.
+
 -If you want to change the order of the estimator just comment the old estimator, uncomment the new one and reconnect in the sum blocks incestimr2 instead of incestim or vice versa. The blocks sum to obtain the total estimated final mass are two, one for each uav.
 
 VIDEO_SIM.slx
